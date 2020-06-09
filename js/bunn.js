@@ -1,3 +1,6 @@
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
 var BunnPupilSize = 20;
 var BunnEyeSize = BunnPupilSize + 10;
 
