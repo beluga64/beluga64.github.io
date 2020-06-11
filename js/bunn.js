@@ -1,6 +1,9 @@
-window.onload = drawBun;
+
 
 function drawBun(){
+  
+  const canvas = document.querySelect('canvas');
+  const ctx = canvas.getContext('2d'); // ctx is a common convention for accessing for the Canvas c
   
   var BunnPupilSize = 20;
   var BunnEyeSize = BunnPupilSize + 10;
