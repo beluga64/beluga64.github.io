@@ -3,15 +3,15 @@
 function drawBun(){
   
   const canvas = document.querySelect('canvas');
-  const ctx = canvas.getContext('2d'); // ctx is a common convention for accessing for the Canvas c
+  const ctx = canvas.getContext('2d'); // ctx is a common convention for accessing for the Canvas 
   
   var BunnPupilSize = 20;
   var BunnEyeSize = BunnPupilSize + 10;
 
   fill(252, 198, 171);
 
-  ellipse(150, 70, 60, 120);  // left ear
-  ellipse(240, 70, 60, 120);  // right ear
+  ctx.ellipse(150, 70, 60, 120);  // left ear
+  ctx.ellipse(240, 70, 60, 120);  // right ear
   
   ellipse(200, 170, 150, 150);    // face
 
