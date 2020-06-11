@@ -3,33 +3,19 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
-<script type="text/javascript" src="js/bunn.js"></script>
-  <script>
-    var BunnPupilSize = 20;
-var BunnEyeSize = BunnPupilSize + 10;
+ <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+   var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 
-fill(252, 198, 171);
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
 
-ellipse(150, 70, 60, 120);  // left ear
-ellipse(240, 70, 60, 120);  // right ear
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80); 
+</canvas> 
 
-ellipse(200, 170, 150, 150);    // face
-
-fill (0, 255, 47);
-ellipse(170,150,BunnEyeSize, BunnEyeSize); //pupils
-ellipse(230,150,BunnEyeSize, BunnEyeSize);// outer eye
-
-fill(0, 0, 0);
-ellipse(170, 150, BunnPupilSize, BunnPupilSize);  // left eye
-ellipse(230, 150, BunnPupilSize, BunnPupilSize);  // right eye
-
-line(185, 200, 170, 190);
-line(215,200,225,190);//mouth1
-
-line(185, 200, 215, 200); //mouth2
-
-fill(255, 138, 138);
-triangle(200,180,190,170,200,170);
-  </script>
 </body>
 </html>
